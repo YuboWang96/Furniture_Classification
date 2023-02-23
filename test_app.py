@@ -6,7 +6,7 @@ client = TestClient(app)
 
 def test_read_main():
 
-    file_path = "test_image\Abner PU Swivel Chair.jpg"
+    file_path = "Addison King Bed.jpg"
     if file_path:
         files = open(file_path, 'rb')
         response = client.post("/",files={"file": files})
