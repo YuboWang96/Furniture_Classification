@@ -11,9 +11,8 @@ def test_read_main():
         files = open(file_path, 'rb')
         response = client.post("/",files={"file": files})
         assert response.status_code == 200
-        print(6)
     else:
         pytest.fail("Scratch file does not exists.")
 
 
-test_read_main()
+
